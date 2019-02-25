@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">Curah Pro</string>
+    <string name="google_maps_key">AIzaSyCHWKiaWNI182xrqZXsMijc0V3GmuX6rPM</string>
+   <!-- <string name="facebook_app_id">230720987614108</string>
+    <string name="fb_login_protocol_scheme">fb230720987614108</string>-->
+
+    <string name="facebook_app_id">1950719301903266</string>
+    <string name="fb_login_protocol_scheme">fb1950719301903266</string>
+
+    <string name="leaveMessage">Leave the message below and we will get back to you within 24 hours.</string>
+    <string name="termServices"><medium> I agree to the Curah </medium> <a href="https://curahapp.com/pages/Terms-Conditions" style ="color:#fff"><font size="14"><b>Terms of Service</b></font></a> <medium>and\n</medium> <a href="https://curahapp.com/pages/Privacy-Policy" style ="color:#fff"><font size="14"><b>Privacy Policy.</b> </font></a></string>
+    <string name="file_provider_authority_" translatable="false">com.curahservice.netset.fileprovider</string>
+    <string name="connect_to_internet_first">Connect to Internet First</string>
+    <string name="server_has_stop_working">Server is not responding</string>
+    <string name="skip">Skip</string>
+    <string name="welcome">Welcome to Curah!</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="noaccount">Don\'t have an account?</string>
+    <string name="login">Login</string>
+    <string name="forgot_your">Forgot your password?</string>
+    <string name="forgot_hint">Enter your registered email address below \nto retrieve your password.</string>
+    <string name="submit">Submit</string>
+    <string name="breaks">Break Time</string>
+    <string name="signup">Sign up</string>
+    <string name="home">Home</string>
+    <string name="myprofile">My Profile</string>
+    <string name="history">History</string>
+    <string name="appointment">Appointment</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="message">Messages</string>
+    <string name="notification">Notifications</string>
+    <string name="settings">Settings</string>
+    <string name="done">Done</string>
+    <string name="next">Next</string>
+    <string name="upload_profile">Upload Profile Picture</string>
+    <string name="fname">FIRST NAME</string>
+    <string name="lname">LAST NAME</string>
+    <string name="mobile_number">MOBILE NUMBER</string>
+    <string name="fb">FACEBOOK</string>
+    <string name="instagram">INSTAGRAM</string>
+    <string name="yelp">YELP</string>
+    <string name="experience">EXPERIENCE</string>
+    <string name="location">LOCATION</string>
+    <string name="enter_your_experience">Enter Your Experience</string>
+    <string name="city">CITY</string>
+    <string name="working_hours">WORKING HOURS</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="upload_driving_licence">Upload Cosmetology License </string>
+    <string name="upload_indentification_card">Upload Identification Card</string>
+    <string name="enter_your_location">Enter Your Location</string>
+    <string name="complete_profile">Complete Profile</string>
+    <string name="service_name">SERVICE NAME</string>
+    <string name="enter_service_name">Enter a Service Name</string>
+    <string name="price">PRICE</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="suggested_services">Suggested Services</string>
+    <string name="my_services">My Services</string>
+    <string name="Add_following_Payment">Add following Payment Details for\nReceiving Money:-</string>
+    <string name="name">NAME</string>
+    <string name="subject">SUBJECT</string>
+    <string name="email_address">EMAIL ADDRESS</string>
+    <string name="message_contact">MESSAGE</string>
+    <string name="enterYourName">Enter Your Name</string>
+    <string name="bank_name">BANK NAME</string>
+    <string name="enterBankName">Enter Bank Name</string>
+    <string name="accountNo">ACCOUNT NUMBER</string>
+    <string name="enterBankAcc">Enter Bank Account Number</string>
+    <string name="routingNo">ROUTING NUMBER</string>
+    <string name="locality">BANK ADDRESS</string>
+    <string name="enterRoutingNo">Enter Routing Number</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="admin_will_approve_your">Admin will approve your profile only after that you are allow to access the app services.</string>
+    <string name="cancelAppointme">Cancel Appointment</string>
+    <string name="areYoySureYouWantTo">Are you sure you want to cancel the appointment?</string>
+    <string name="giveAReason">Give a Reason</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="busyWithothertask">Busy With other task</string>
+    <string name="otherReason">Other reason.</string>
+    <string name="rateReview"><![CDATA[Rate & Review]]></string>
+    <string name="selectStar">Select Stars</string>
+    <string name="enteraReviewMsg">Enter a review message</string>
+    <string name="thankewForUsing">Thank you for using</string>
+    <string name="blowOut">Blow Out</string>
+    <string name="hairColor">Hair Color</string>
+    <string name="total">Total</string>
+    <string name="oops">OOPS!</string>
+    <string name="no_new_appointment_req">No new appointment requests yet.</string>
+    <string name="end_service">End Service</string>
+    <string name="bookappointment">Book Appointment</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="add_services">Add Services</string>
+    <string name="add_bank_detail">Add Bank Detail</string>
+    <string name="myAppoitment">My Appointment</string>
+    <string name="serviceCost">Service Cost</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="customerDetails">Customer Details</string>
+    <string name="cancel_service">Cancel Service</string>
+    <string name="start_service">Start Service</string>
+    <string name="details">Details</string>
+    <string name="delete">Delete</string>
+    <string name="view_receipt">View Receipt</string>
+    <string name="receipt">Receipt</string>
+    <string name="uploadPictureOrVideo">Upload Picture or Video</string>
+    <string name="title">TITLE</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="addPortfolio">Add Portfolio</string>
+    <string name="editPortFolio">Edit Portfolio</string>
+    <string name="chat">Chat</string>
+    <string name="about_us">About Us</string>
+    <string name="termsAndConditions">Terms and Conditions</string>
+    <string name="bank_info">Bank info</string>
+    <string name="schedule">Schedule</string>
+    <string name="my_documents">My Documents</string>
+    <string name="addNewServices">Add New Services</string>
+    <string name="socialMedia">Social Media</string>
+    <string name="yourFeedbackToCustomer">Your feedback to Customer</string>
+    <string name="customerFeedBackToYou">Customer feedback to you</string>
+    <string name="close">Close</string>
+    <string name="seeTimeSlots">Set time slots</string>
+    <string name="addMore"><u>+ Add More</u></string>
+    <string name="editDoc">Edit Documents</string>
+    <string name="changeProfilePic">Change Profile Picture</string>
+    <string name="updateProfile">Update Profile</string>
+    <string name="change_driving_licence">Change Cosmetology License</string>
+    <string name="change_indentification_card">Change Identification Card</string>
+    <string name="specialNote">Special Note:</string>
+    <string name="specialNote_Thanks">By changing any document then your profile will again submit to admit for review. The review process can take 2 to 3 days, during the review you cannot use any app service.</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="nogps">No Internet</string>
+    <string name="youCancel">You have cancelled the appointment.</string>
+    <string name="customerCancel">Customer cancelled the appointment.</string>
+    <string name="phoneNumber">PHONE NUMBER</string>
+    <string name="contact">Contact Us</string>
+    <string name="noInternet">Please connect to internet connection</string>
+    <string name="AtleastOnePredefined">You should have alteast one predefined service from the suggestion list.</string>
+    <string name="noPredefined">Please add atleast one predefined service from suggested service list.</string>
+    <string-array name="services">
+        <item>Hairs</item>
+        <item>Nails</item>
+        <item>Makeup</item>
+        <item>Others</item>
+    </string-array>
+    <string name="Server_Error">Unable to connect with the server. Server is Unable to Work Please try after Some time</string>
+    <string name="connection_error_message">Unable to connect with the server. Please check your internet connection and try again!</string>
+    <string name="poor_connection">Unable to connect with the server. Please check your internet connection and try again!</string>
+    <string name="licenceNumber">LICENCE NUMBER</string>
+    <string name="tax">Transaction Fee</string>
+    <string-array name="experience">
+        <item>Enter Your Experience</item>
+        <item>Less than a year</item>
+        <item>1 year</item>
+        <item>2 years</item>
+        <item>3 years</item>
+        <item>4 years</item>
+        <item>5 years</item>
+        <item>6 years</item>
+        <item>7 years</item>
+        <item>8 years</item>
+        <item>9 years</item>
+        <item>10 years</item>
+        <item>More than 10 years</item>
+    </string-array>
+
+
+</resources>

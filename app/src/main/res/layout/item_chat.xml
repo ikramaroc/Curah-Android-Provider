@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/otherUserMessage_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/date"
+        android:layout_marginLeft="@dimen/_8sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/otherUserImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/portfolio" />
+
+        <TextView
+            android:id="@+id/msgOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/otherAngle"
+            android:text="Kim Joy"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_size_d" />
+
+        <ImageView
+            android:id="@+id/otherAngle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msgOther"
+            android:layout_toRightOf="@+id/otherUserImage"
+            android:rotation="180"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:tint="#D3D3D3"
+            android:src="@drawable/msg_triangle" />
+
+        <LinearLayout
+            android:id="@+id/otherUserMessagell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msgOther"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/otherAngle"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_bg"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/otherImage_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            app:cardCornerRadius="@dimen/_4sdp">
+
+                            <ImageView
+                                android:id="@+id/otherImagePost"
+                                android:layout_width="@dimen/_180sdp"
+                                android:layout_height="@dimen/_130sdp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/hair" />
+
+                        </android.support.v7.widget.CardView>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/otherImagePlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@android:drawable/ic_media_play"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:padding="@dimen/_2sdp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/other_message"
+                        style="@style/Normal16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha=".9"
+                        android:fontFamily="@font/aeh_regular"
+                        android:minWidth="@dimen/_100sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="adass"
+                        android:textColor="@android:color/black"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/timeOthermsg"
+                style="@style/Normal14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/otherUserMessagell"
+                android:layout_gravity="right"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/otherUserImage"
+                android:text="7 min ago"
+                android:textColor="@color/divider_bg" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mymessage_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/portfolio" />
+
+        <ImageView
+            android:id="@+id/myAngle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msgFrom"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/myImage"
+            android:tint="@color/colorPrimary"
+            app:srcCompat="@drawable/msg_triangle"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/msgFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/myAngle"
+            android:text="You"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_size_d" />
+
+        <RelativeLayout
+            android:id="@+id/myMessage_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msgFrom"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_toLeftOf="@+id/myAngle"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_btn"
+                android:gravity="center"
+                android:minHeight="@dimen/_35sdp"
+                android:minWidth="@dimen/_100sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/image_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:visibility="gone"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            app:cardCornerRadius="@dimen/_4sdp">
+
+                            <ImageView
+                                android:id="@+id/imagePost"
+                                android:layout_width="@dimen/_180sdp"
+                                android:layout_height="@dimen/_130sdp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/hair" />
+                        </android.support.v7.widget.CardView>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/playImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@android:drawable/ic_media_play"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/my_message"
+                    style="@style/Normal16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/aeh_regular"
+                    android:gravity="center"
+                    android:minHeight="@dimen/_35sdp"
+                    android:minWidth="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/timeMyMessage"
+                style="@style/Normal14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/msg"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="5 min ago"
+                android:textColor="@color/divider_bg" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_cover">
+
+    <RelativeLayout
+        android:id="@+id/header_RL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/pick_CIV_CV"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/pick_CIV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/add_port" />
+
+            <ImageView
+                android:id="@+id/ic_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_play"
+                android:visibility="gone" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pick_CIV_CV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/aeh_regular"
+            android:text="@string/uploadPictureOrVideo"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_size_bc" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_RL"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp">
+
+        <!--<android.support.design.widget.TextInputLayout
+            android:id="@+id/experience_TIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:hint="@string/experience"/>
+        </android.support.design.widget.TextInputLayout>-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/title_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:textColorHint="@color/colorPrimary"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/title_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                android:fontFamily="@font/aeh_regular"
+                android:gravity="center"
+                android:hint="@string/title"
+                android:inputType="textCapWords"
+                android:lines="1"
+                android:maxLength="40"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_d" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/description_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_TV"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:textColorHint="@color/colorPrimary"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/enter_description_ET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aeh_regular"
+                android:gravity="center"
+                android:hint="@string/description"
+                android:maxLength="200"
+                android:maxLines="5"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_d" />
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/submit_TV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/aeh_bold"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_size_d" />
+</RelativeLayout>

@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "68433816647",
+    "firebase_url": "https://curah-customer-214308.firebaseio.com",
+    "project_id": "curah-customer-214308",
+    "storage_bucket": "curah-customer-214308.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68433816647:android:d959f8da7e4eb631",
+        "android_client_info": {
+          "package_name": "com.curah.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68433816647-5rcls2pr2rv51e41thkjjlgaatrfpcog.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.curah.customer",
+            "certificate_hash": "f6551ed7424c10678480e2b242a5ca8ba042a808"
+          }
+        },
+        {
+          "client_id": "68433816647-ru48ftv4fct2t810acl7punppdrno55c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB53X1hhE1tQw_W7Quah0Tx1odwOiRLz5U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68433816647-ru48ftv4fct2t810acl7punppdrno55c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "68433816647-nbb1sqmasbekgl81rni6kofviqat2l6l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.curahProvider"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68433816647:android:041ccf1d6d927bbe",
+        "android_client_info": {
+          "package_name": "com.curahservice.netset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68433816647-sc5qjq1ot79pkhicfmgg1kkig6rkm60i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.curahservice.netset",
+            "certificate_hash": "f6551ed7424c10678480e2b242a5ca8ba042a808"
+          }
+        },
+        {
+          "client_id": "68433816647-ru48ftv4fct2t810acl7punppdrno55c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB53X1hhE1tQw_W7Quah0Tx1odwOiRLz5U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68433816647-ru48ftv4fct2t810acl7punppdrno55c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "68433816647-nbb1sqmasbekgl81rni6kofviqat2l6l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.curahProvider"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

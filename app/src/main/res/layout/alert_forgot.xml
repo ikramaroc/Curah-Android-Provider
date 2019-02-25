@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:src="@mipmap/forget_icon_bg" />
+
+    <TextView
+        style="@style/Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aeh_heavy"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="An email has been sent to your registered email address. Follow the directions in the email to reset password."
+        android:textColor="@color/divider_bg"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/done_Btn"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40_btndp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/done" />
+
+</LinearLayout>

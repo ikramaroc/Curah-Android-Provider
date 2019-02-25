@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "com.curahservice.netset"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 8
+        versionName "1.7"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        maven { url "https://mint.splunk.com/gradle/" }
+        maven { url 'https://jitpack.io' }      /*svn code commit*/
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    /*best*/
+    implementation 'com.splunk.mint:mint:5.0.0'
+    implementation 'com.androidadvance:topsnackbar:1.1.1'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    // Glide v4 uses this new annotation processor -- see https://bumptech.github.io/glide/doc/generatedapi.html
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    /*donot change glide version*/
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+    /*dimensions*/
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.jaeger.statusbarutil:library:1.4.0'
+    implementation 'com.justkiddingbaby:slidemenu:1.3.0'
+    implementation "com.android.support:cardview-v7:$VERSION"
+    implementation project(':swipe-reveal-layout')
+    implementation 'com.whiteelephant:monthandyearpicker:1.2.0'
+    implementation 'com.soundcloud.android:android-crop:1.0.1@aar'
+    implementation 'com.google.maps.android:android-maps-utils:0.5+'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:2.7.5'
+    api 'com.github.bumptech.glide:glide:4.8.0'
+    api 'com.facebook.android:facebook-android-sdk:4.32.0'
+    api 'com.google.android.gms:play-services-base:16.0.1'
+    api 'com.google.android.gms:play-services-auth:16.0.1'
+    api 'com.google.android.gms:play-services-location:16.0.0'
+    api 'com.google.android.gms:play-services-places:16.0.0'
+    api 'com.google.android.gms:play-services-plus:16.0.0'
+    api 'com.google.android.gms:play-services-identity:16.0.0'
+    api 'com.google.firebase:firebase-core:16.0.6'
+    api 'com.google.firebase:firebase-messaging:17.3.4'
+    api 'com.googlecode.libphonenumber:libphonenumber:7.2.2'
+    api 'com.google.android.gms:play-services-wallet:16.0.1'
+    api 'com.crashlytics.sdk.android:crashlytics:2.9.6'
+    /*implementation 'com.brucetoo.pickview:library:1.2.3'*/
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+}

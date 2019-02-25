@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_480sdp"
+    android:background="@android:color/white"
+    android:padding="@dimen/_20sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingTop="@dimen/_15sdp"
+        android:background="@drawable/receipt_bg">
+
+        <TextView
+            android:id="@+id/thankewForUsing_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:text="@string/thankewForUsing"
+            android:textSize="@dimen/txt_size_c"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/aeh_bold"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/thankewForUsing_TV"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/splash_logo" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:minWidth="@dimen/_150sdp"
+            android:id="@+id/servicesList"
+            android:layout_marginTop="@dimen/_10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <RelativeLayout
+            android:id="@+id/RLTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_below="@+id/servicesList"
+        >
+
+            <TextView
+                android:id="@+id/tax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tax"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/txt_size_e"
+                android:fontFamily="@font/aeh_heavy"/>
+
+            <TextView
+                android:id="@+id/taxprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/aeh_heavy"
+                android:gravity="center"
+
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_size_e" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/RL2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/RLTax"
+            >
+
+            <TextView
+                android:id="@+id/total_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/txt_size_f"
+                android:fontFamily="@font/aeh_heavy"/>
+
+            <TextView
+                android:id="@+id/totalDollar_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textSize="@dimen/txt_size_f"
+                android:fontFamily="@font/aeh_heavy"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

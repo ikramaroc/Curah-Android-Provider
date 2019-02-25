@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="oval" >
+            <size
+                android:height="60dp"
+                android:width="60dp" />
+
+            <solid android:color="#10555555" />
+        </shape>
+    </item>
+    <item android:bottom="10dp"
+        android:left="3dp"
+        android:drawable="@mipmap/ic_send_pink">
+    </item>
+</layer-list>

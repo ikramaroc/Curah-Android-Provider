@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/addBank"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/_200sdp"
+        style="@style/button"
+       android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Add bank"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/bankInfo_RL"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/webview"/>
+
+
+
+    </RelativeLayout>
+
+    <!--   <TextView
+                android:id="@+id/name_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@color/green"
+                android:textAllCaps="true"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_bold"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/nameVal_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_regular"
+                android:text="" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_below="@+id/name_TV"
+                android:background="@color/divider_bg"/>
+
+            <TextView
+                android:id="@+id/bank_name_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@color/green"
+                android:textAllCaps="true"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_bold"
+                android:text="@string/bank_name" />
+
+            <TextView
+                android:id="@+id/bankVal_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_regular"
+                android:text="" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_below="@+id/bank_name_TV"
+                android:background="@color/divider_bg"/>
+
+            <TextView
+                android:id="@+id/acc_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@color/green"
+                android:textAllCaps="true"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_bold"
+                android:text="@string/accountNo" />
+
+            <TextView
+                android:id="@+id/accVal_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_regular"
+                android:text="" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_below="@+id/acc_TV"
+                android:background="@color/divider_bg"/>
+
+            <TextView
+                android:id="@+id/routing_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view3"
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@color/green"
+                android:textAllCaps="true"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_bold"
+                android:text="@string/routingNo" />
+
+            <TextView
+                android:id="@+id/routingVal_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view3"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_regular"
+                android:text="" />-->
+
+
+
+</RelativeLayout>

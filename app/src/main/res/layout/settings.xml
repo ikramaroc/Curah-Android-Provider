@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/notificationSwitch"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/notification"
+                    style="@style/Normal16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Notifications"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Turn On/Off Your Push Notification"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/notificationSwitch"
+                style="@style/Normal14"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_width="@dimen/_60dp"
+                android:layout_height="@dimen/_25dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_on"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/about_us_text"
+            style="@style/Normal16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/about_us"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+        <TextView
+            android:id="@+id/contact_us"
+            style="@style/Normal16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/contact"
+            android:textColor="@android:color/black" />
+
+
+        <View
+            android:id="@+id/viewChange_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:background="@color/grey" />
+        <TextView
+            android:id="@+id/privacyPolicy"
+            style="@style/Normal16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="Privacy Policy"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/terms_condition"
+            style="@style/Normal16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/termsAndConditions"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/rateApp"
+            style="@style/Normal16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="Rate App"
+            android:textColor="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/changePass"
+            style="@style/Normal16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="Change Password"
+            android:textColor="@android:color/black" />
+        <View
+            android:id="@+id/ChangeView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/logout"
+            style="@style/Normal16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:drawableRight="@mipmap/ic_right_arrow"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="Logout"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,283 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/grey</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/grey</item>
+        <item name="android:colorActivatedHighlight">@color/grey</item>
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@color/grey</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/colorPrimary</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+        <item name="android:windowTranslucentNavigation" tools:ignore="NewApi">true</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+
+        <!--   <item name="android:actionMenuTextAppearance">@style/MenuItemTextAppearance</item>
+           <item name="android:actionMenuTextColor">@android:color/white</item>
+           <item name="android:itemTextAppearance">@style/MenuItemTextAppearance1</item>-->
+
+    </style>
+
+
+
+    <style name="Theme.Transparent.MyDemo" parent="Theme.AppCompat">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+
+
+
+    <style name="MenuItemTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="textAllCaps">false</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="MenuItemTextAppearance1">
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="small" parent="TextAppearance.Design.Counter">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+    <style name="SmallWhiteTextView2" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorAccent">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="colorPrimaryDark">@color/white</item>
+
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+
+    </style>
+
+    <style name="Normal" parent="TextAppearance.Design.Counter">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+    <style name="button" parent="TextAppearance.Design.Error">
+        <!-- Error message appearance here -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/aeh_bold</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_bold</item>
+    </style>
+
+    <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/top_in</item>
+        <item name="android:windowExitAnimation">@anim/top_out</item>
+    </style>
+
+    <style name="NormalPink" parent="TextAppearance.Design.Counter">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+  <!--  <style name="customRatingBar" parent="@android:style/Widget.Material.RatingBar.Indicator" tools:ignore="NewApi">
+        <item name="android:progressDrawable">@drawable/ratin_bar</item>
+        <item name="android:minHeight">40dip</item>
+        <item name="android:maxHeight">40dip</item>
+    </style>-->
+
+    <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratin_bar</item>
+
+
+    </style>
+
+    <style name="foodRatingBar" parent="android:Widget.Holo.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Normal18" parent="TextAppearance.Design.Counter">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+    <style name="Normal12" parent="TextAppearance.Design.Counter">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+    <style name="Normal14" parent="TextAppearance.Design.Counter">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+    <style name="Normal16" parent="TextAppearance.Design.Counter">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+    <style name="Bold16" parent="TextAppearance.Design.Counter">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/aeh_bold</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_bold</item>
+    </style>
+    <style name="Heading" parent="TextAppearance.Design.Counter">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/aeh_bold</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_bold</item>
+    </style>
+
+    <style name="Bold" parent="TextAppearance.Design.Counter">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/aeh_bold</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_bold</item>
+    </style>
+
+    <style name="DialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/greyDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="Widget.Design.TextInputLayout" parent="AppTheme">
+        <item name="hintTextAppearance">@style/AppTheme.TextFloatLabelAppearance</item>
+        <item name="errorTextAppearance">@style/AppTheme.TextErrorAppearance</item>
+        <!--<item name="counterTextAppearance">@style/TextAppearance.Design.Counter</item>-->
+        <item name="android:textSize">13sp</item>
+        <item name="android:autoSizeMaxTextSize" tools:ignore="NewApi">15sp</item>
+        <item name="counterTextAppearance">@style/Normal14</item>
+        <item name="counterOverflowTextAppearance">@style/Normal14</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+
+    <style name="AppTheme.TextErrorAppearance" parent="TextAppearance.Design.Error">
+        <!-- Error message appearance here -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+    <style name="AppTheme.TextFloatLabelAppearance" parent="TextAppearance.Design.Hint">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+
+    <style name="CustomTextInputPink" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="counterTextAppearance">@style/NormalPink</item>
+        <item name="colorPrimary">@color/grey</item>
+        <item name="colorPrimaryDark">@color/grey</item>
+        <item name="colorAccent">@color/grey</item>
+        <item name="android:colorActivatedHighlight">@color/greyDark</item>
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@color/greyDark</item>
+        <item name="counterOverflowTextAppearance">@style/NormalPink</item>
+        <item name="colorControlNormal">@color/greyDark</item>
+        <item name="colorControlActivated">@color/greyDark</item>
+        <item name="colorControlHighlight">@color/greyDark</item>
+        <item name="android:textColor">@color/greyDark</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+    <style name="PinkFloat" parent="TextAppearance.Design.Hint">
+        <!-- Floating label appearance here -->
+        <item name="android:textColor">@color/pink</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+    <style name="PinkError" parent="TextAppearance.Design.Error">
+        <!-- Error message appearance here -->
+        <item name="android:textColor">@color/pink</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">@font/aeh_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/aeh_regular</item>
+    </style>
+
+
+
+
+
+
+
+
+
+</resources>

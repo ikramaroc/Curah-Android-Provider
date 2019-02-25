@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rateReview_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aeh_heavy"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:text="@string/rateReview"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/txt_size_g" />
+
+    <TextView
+        android:id="@+id/selectStar_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aeh_regular"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_25sdp"
+        android:text="@string/selectStar"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/txt_size_e" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1"
+        android:isIndicator="false"
+        style="@style/customRatingBar"
+        android:max="5"/>
+
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enteraReviewMsg"
+        android:minHeight="@dimen/_70sdp"
+        android:textColorHint="@color/greyDark"
+        android:layout_gravity="top"
+        android:gravity="top"
+        android:textSize="@dimen/_14sp"
+        android:layout_margin="@dimen/_10sdp"
+       />
+
+    <Button
+        android:id="@+id/submit_Btn"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/txt_size_e"
+        android:layout_height="@dimen/_40_btndp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/aeh_heavy"
+        android:textColor="@android:color/white"
+        android:text="@string/submit" />
+
+</LinearLayout>

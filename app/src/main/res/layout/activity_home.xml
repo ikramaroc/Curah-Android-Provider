@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentLay"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.jkb.slidemenu.SlideMenuLayout
+        android:id="@+id/mainSlideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:allowDragging="true"
+        app:contentAlpha="0.5"
+        app:contentToggle="true"
+        app:parallax="true"
+        app:slideMode="left">
+
+        <include layout="@layout/layout_drawer_content"/>
+
+        <RelativeLayout
+            android:id="@+id/fm_slide_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_container_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/toolbar_home"
+                    layout="@layout/layout_toolbar"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.jkb.slidemenu.SlideMenuLayout>
+</LinearLayout>

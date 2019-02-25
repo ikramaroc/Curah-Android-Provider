@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_05dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp">
+
+        <View
+            android:layout_width="@dimen/_05dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider"/>
+
+        <TextView
+            android:id="@+id/name_TV"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/aeh_regular"
+            android:textSize="@dimen/txt_size_c"
+            android:text="TextView"/>
+
+        <View
+            android:id="@+id/seprator"
+            android:layout_width="@dimen/_05dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@color/divider"/>
+
+        <TextView
+            android:id="@+id/price_TV"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/aeh_regular"
+            android:textSize="@dimen/txt_size_c"
+            android:text="$ 15.40"/>
+
+
+
+        <ImageView
+            android:id="@+id/edit_IV"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/ic_edit" />
+        <ImageView
+            android:id="@+id/delete_IV"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_gravity="center"
+            app:srcCompat="@mipmap/ic_delete" />
+        <View
+            android:layout_width="@dimen/_05dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_05dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@color/divider"/>
+</LinearLayout>

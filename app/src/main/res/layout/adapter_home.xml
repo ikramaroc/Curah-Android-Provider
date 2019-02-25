@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/_20sdp"
+    android:id="@+id/outsideAppoinment"
+    android:paddingRight="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/date_time_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/aeh_regular"
+        android:text="28 May, 2018 10:00 am to 11:00 am"
+        android:textColor="@color/divider_bg"
+        android:textSize="@dimen/txt_size_c" />
+
+    <RelativeLayout
+        android:id="@+id/RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_time_TV">
+
+        <TextView
+            android:id="@+id/service_name_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toLeftOf="@+id/rightArrow_IV"
+            android:fontFamily="@font/aeh_regular"
+            android:text="Hair Color"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_size_d" />
+
+        <ImageView
+            android:id="@+id/rightArrow_IV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@mipmap/ic_right_arrow" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/accept_TV"
+        style="@style/button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/RL"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/round_corner"
+        android:paddingLeft="@dimen/_15dp"
+        android:paddingRight="@dimen/_15dp"
+        android:text="@string/accept"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/reject_TV"
+        style="@style/button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_below="@+id/RL"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_toRightOf="@+id/accept_TV"
+        android:background="@drawable/round_corner"
+        android:text="@string/reject"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/accept_TV"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/divider_bg" />
+</RelativeLayout>

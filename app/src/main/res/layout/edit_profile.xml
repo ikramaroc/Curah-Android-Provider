@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lay_backimg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp">
+
+                <ImageView
+                    android:id="@+id/backCover"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_appointment"
+                    android:layout_height="match_parent"
+                 />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/gradient_bg_trans"
+                    android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_IV"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/portfolio" />
+
+                <TextView
+                    android:id="@+id/changeProfilePic_TV"
+                    style="@style/small"
+                    android:layout_below="@+id/profile_IV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="@string/changeProfilePic"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/txt_size_bc" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/liner_textname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/_5dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_vertical"
+                android:weightSum="2">
+
+                <!--<TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/txt_size_c"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textColor="@color/colorPrimary"
+                    android:text="First Name"/>-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <android.support.v7.widget.AppCompatEditText
+                       android:id="@+id/fname_EDT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="FIRST NAME"
+                        android:inputType="textEmailAddress"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                        android:maxLength="12"
+                        android:maxLines="5"
+                        android:textSize="@dimen/txt_size_c"
+                        android:fontFamily="@font/aeh_regular"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <!--<TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/txt_size_c"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Last Name"/>-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <android.support.v7.widget.AppCompatEditText
+                       android:id="@+id/lastName_EDT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="LAST NAME"
+                        android:inputType="textEmailAddress"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                        android:maxLength="12"
+                        android:maxLines="5"
+                        android:textSize="@dimen/txt_size_c"
+                        android:fontFamily="@font/aeh_regular"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/black"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/txt_size_c"
+                android:textAllCaps="true"
+                android:fontFamily="@font/aeh_regular"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:text="Mobile Number"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_regular"
+                android:textColor="@android:color/black"
+                android:inputType="number"/>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimary"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.v7.widget.AppCompatEditText
+                   android:id="@+id/mobile_Num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="MOBILE NUMBER"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:maxLines="5"
+                    android:textSize="@dimen/txt_size_c"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimary"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.v7.widget.AppCompatEditText
+                   android:id="@+id/fb_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="FACEBOOK"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:maxLines="5"
+                    android:textSize="@dimen/txt_size_c"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txt_size_c"
+                android:textAllCaps="true"
+                android:fontFamily="@font/aeh_regular"
+                android:text="Instagram"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_regular"
+                android:textColor="@android:color/black"
+                android:inputType="textEmailAddress"/>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimary"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/insta_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="INSTAGRAM"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:maxLines="5"
+                    android:textSize="@dimen/txt_size_c"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"/>
+            </android.support.design.widget.TextInputLayout>
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/txt_size_c"
+                android:textAllCaps="true"
+                android:fontFamily="@font/aeh_regular"
+                android:textColor="@color/colorPrimary"
+                android:text="Yelp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_regular"
+                android:textColor="@android:color/black"
+                />-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimary"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/yelp_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="YELP"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    android:maxLines="5"
+                    android:textSize="@dimen/txt_size_c"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/txt_size_c"
+                android:textAllCaps="true"
+                android:fontFamily="@font/aeh_regular"
+                android:textColor="@color/colorPrimary"
+                android:text="Experience"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_regular"
+                android:textColor="@android:color/black"
+                />-->
+            <TextView
+                android:id="@+id/headExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Normal14"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="@dimen/txt_size_c"
+                android:text="@string/experience"/>
+            <Spinner
+                android:id="@+id/experince"
+                android:layout_below="@id/headExp"
+                android:layout_width="fill_parent"
+                android:background="@null"
+                android:prompt="@null"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_35sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/experince"
+                android:layout_marginLeft="15dp"
+                android:background="@color/grey" />
+
+            <!-- <android.support.design.widget.TextInputLayout
+                 android:id="@+id/experience_TV"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginEnd="15dp"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginRight="15dp"
+                 android:layout_marginStart="15dp"
+                 android:gravity="center"
+                 android:textColorHint="@color/colorPrimary"
+                 app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                 <android.support.v7.widget.AppCompatEditText
+                     android:id="@+id/experience_ET"
+                     style="@style/NormalPink"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:hint="@string/experience"
+                     android:inputType="textEmailAddress"
+                     android:maxLength="12"
+                     android:textAllCaps="false"
+                     android:textColor="@android:color/black"
+                     android:textSize="@dimen/txt_size_c" />
+             </android.support.design.widget.TextInputLayout>
+ -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/location_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/experince"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimary"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/location_ET"
+                    style="@style/NormalPink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/location"
+                    android:inputType="text"
+                    android:maxLength="150"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_c" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_TV"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColorHint="@color/colorPrimary"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/city_ET"
+                    style="@style/NormalPink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="@string/city"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="150"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_c" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/working_hours_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/city"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/aeh_light"
+                android:text="@string/working_hours"
+                android:layout_gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txt_size_c" />
+
+            <LinearLayout
+                android:id="@+id/timepick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/working_hours_TV"
+                android:orientation="horizontal"
+                android:weightSum="2.05">
+
+                <TextView
+                    android:id="@+id/from_time_ET"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/ic_time"
+                    android:ems="10"
+                    android:fontFamily="@font/aeh_regular"
+                    android:gravity="center"
+                    android:hint="@string/from"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="@dimen/txt_size_c" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05" />
+
+                <TextView
+                    android:id="@+id/to_time_ET"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/ic_time"
+                    android:ems="10"
+                    android:fontFamily="@font/aeh_regular"
+                    android:gravity="center"
+                    android:hint="@string/to"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="@dimen/txt_size_c" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/updateProfile_TV"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/aeh_bold"
+                android:gravity="center"
+                android:text="@string/updateProfile"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_size_d" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

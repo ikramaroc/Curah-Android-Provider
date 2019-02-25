@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/lay_backimg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp">
+
+            <ImageView
+                android:id="@+id/backCover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/gradient_bg_trans"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_IV"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:src="@mipmap/ic_profile_pic_img" />
+
+                <LinearLayout
+                    android:id="@+id/rating_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_IV"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lay_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/rating_RB"
+                            style="@style/foodRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:layout_marginLeft="8dp"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:progressTint="#FFA649"
+                            android:rating="3" />
+
+                        <TextView
+                            android:id="@+id/rate_TV"
+                            style="@style/small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="(86 Reviews)"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/txt_size_cd" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_backimg"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/item_RL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_RL"
+                android:background="@android:color/white"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/socialLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/socialMedia_TV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/aeh_bold"
+                        android:text="@string/socialMedia"
+                        android:textAllCaps="true"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/txt_size_bc" />
+
+                    <ImageView
+                        android:id="@+id/fb_IV"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_below="@+id/socialMedia_TV"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:layout_toLeftOf="@+id/fakeView"
+                        app:srcCompat="@mipmap/ic_facebook" />
+
+                    <View
+                        android:id="@+id/fakeView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <ImageView
+                        android:id="@+id/insta_IV"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_below="@+id/socialMedia_TV"
+                        android:layout_margin="@dimen/_6sdp"
+                        android:layout_toRightOf="@+id/fakeView"
+                        app:srcCompat="@mipmap/ic_insta" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/socialLink"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:id="@+id/location_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/aeh_bold"
+                    android:text="@string/location"
+                    android:textAllCaps="true"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/txt_size_bc" />
+
+                <TextView
+                    android:id="@+id/address_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location_TV"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:drawableLeft="@mipmap/ic_loaction"
+                    android:drawablePadding="@dimen/_7sdp"
+                    android:fontFamily="@font/aeh_regular"
+                    android:gravity="center"
+                    android:text="Urban city Hanover, Germany 160036"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_c" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/address_TV"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:id="@+id/experience_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/aeh_bold"
+                    android:text="@string/experience"
+                    android:textAllCaps="true"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/txt_size_bc" />
+
+                <TextView
+                    android:id="@+id/experience_detail_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/experience_TV"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:drawableLeft="@mipmap/ic_experience"
+                    android:drawablePadding="@dimen/_7sdp"
+                    android:fontFamily="@font/aeh_regular"
+                    android:gravity="center"
+                    android:text="10 Years"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_c" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/experience_detail_TV"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:id="@+id/mobile_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/aeh_bold"
+                    android:text="@string/mobile_number"
+                    android:textAllCaps="true"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/txt_size_bc" />
+
+                <TextView
+                    android:id="@+id/number_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mobile_TV"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:drawableLeft="@mipmap/ic_call_small"
+                    android:drawablePadding="@dimen/_7sdp"
+                    android:fontFamily="@font/aeh_regular"
+                    android:gravity="center"
+                    android:text="+01 987-6543-210"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/txt_size_bc" />
+            </RelativeLayout>
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="#c6a7b6"
+                android:fillViewport="true"
+                android:fitsSystemWindows="true"
+                android:scrollbars="horizontal"
+                app:tabIndicatorColor="@color/green"
+                app:tabMode="scrollable"
+                app:tabTextAppearance="@style/Normal16">
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_services" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/schedule" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bank_info" />
+
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_documents" />
+
+            </android.support.design.widget.TabLayout>
+
+            <FrameLayout
+                android:id="@+id/services_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/_200sdp"
+                android:paddingTop="@dimen/_10sdp" />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

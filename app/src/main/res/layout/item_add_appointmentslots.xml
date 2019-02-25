@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10dp"
+    android:layout_marginRight="@dimen/_10dp"
+    android:layout_marginTop="@dimen/_5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/working_hours_TV"
+        android:orientation="horizontal"
+        android:weightSum="2.05">
+
+        <EditText
+            android:id="@+id/from_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:background="@null"
+
+            android:drawableRight="@mipmap/ic_time"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/aeh_regular"
+            android:gravity="center"
+            android:hint="@string/from"
+            android:inputType="date"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txt_size_d" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05" />
+
+        <EditText
+            android:id="@+id/to_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:cursorVisible="false"
+            android:drawableRight="@mipmap/ic_time"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/aeh_regular"
+            android:gravity="center"
+            android:hint="@string/to"
+            android:background="@null"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/txt_size_d" />
+        <ImageView
+            android:id="@+id/delete_layout"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:tint="@android:color/black"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        android:orientation="horizontal"
+        android:weightSum="2.05">
+
+        <View
+            android:id="@+id/fromView"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/greyDark" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05" />
+
+        <View
+            android:id="@+id/toView"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/greyDark" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addMore_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/aeh_bold"
+        android:padding="@dimen/_5dp"
+        android:gravity="right"
+        android:layout_margin="@dimen/_10dp"
+        android:text="@string/addMore"
+        android:textColor="@color/green"
+        android:textSize="@dimen/txt_size_c" />
+
+</LinearLayout>

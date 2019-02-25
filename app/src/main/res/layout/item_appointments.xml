@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/appoinmentOutside"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_10dp">
+
+
+        <LinearLayout
+            android:id="@+id/time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/label_time"
+                style="@style/Normal14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23 Aug, 2018 !0:00 am to 11:00 am"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp">
+
+                <TextView
+                    android:id="@+id/service_name"
+                    style="@style/Normal18"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/task_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="HairCut"
+                    android:textColor="@android:color/black" />
+
+                <RelativeLayout
+                    android:id="@+id/task_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:id="@+id/task_status"
+                        style="@style/Normal18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_10dp"
+                        android:gravity="center"
+                        android:text="Accepted"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/task_status"
+                        android:background="@mipmap/ic_right_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/viewButton"
+                    style="@style/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:background="@drawable/round_corner"
+                    android:paddingLeft="@dimen/_15dp"
+                    android:paddingRight="@dimen/_15dp"
+                    android:text="@string/end_service"
+                    android:textAllCaps="false"
+                    android:textSize="16sp" />
+
+              <!--  <Button
+                    android:id="@+id/buttonTwo"
+                    style="@style/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
+                    android:background="@drawable/round_corner"
+                    android:layout_toRightOf="@id/buttonOne"
+                    android:paddingLeft="@dimen/_15dp"
+                    android:paddingRight="@dimen/_15dp"
+                    android:text="@string/end_service"
+                    android:textAllCaps="false"
+                    android:textSize="16sp" />-->
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_05dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@color/greyDark" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

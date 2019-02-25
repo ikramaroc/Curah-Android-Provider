@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/white"
+
+            android:fitsSystemWindows="true"
+            app:layout_constraintBottom_toTopOf="@+id/createProfile_BTN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_40dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/firstTextInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:textColorHint="@color/colorPrimary"
+                            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/button">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/fname_EDT"
+                                style="@style/NormalPink"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:hint="@string/fname"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapWords"
+                                android:lines="1"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                                android:maxLength="30"
+                                android:singleLine="true"
+                                android:textAllCaps="false"
+                                android:textColor="@color/divider_bg"
+                                android:textSize="@dimen/txt_size_c" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/lastTextInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:textColorHint="@color/colorPrimary"
+                            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/button">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/lname_edt"
+                                style="@style/NormalPink"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:hint="@string/lname"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                                android:inputType="textCapWords"
+                                android:lines="1"
+                                android:maxLength="30"
+                                android:singleLine="true"
+                                android:textAllCaps="false"
+                                android:textColor="@color/divider_bg"
+                                android:textSize="@dimen/txt_size_c" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/dobTextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                  >
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/mobile_EDT"
+                        style="@style/NormalPink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/mobile_number"
+                        android:inputType="number"
+                        android:textAllCaps="false"
+                        android:maxLength="12"
+                        android:textColor="@color/divider_bg"
+                        android:textSize="@dimen/txt_size_c" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/addressTextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/fb_link"
+                        style="@style/NormalPink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/fb"
+                        android:maxLength="100"
+                        android:inputType="textEmailAddress"
+                        android:textAllCaps="false"
+                        android:textColor="@color/divider_bg"
+                        android:textSize="@dimen/txt_size_c" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/instagram_TIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/insta_link"
+                        style="@style/NormalPink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/instagram"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="100"
+                        android:textAllCaps="false"
+                        android:textColor="@color/divider_bg"
+                        android:textSize="@dimen/txt_size_c" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/yelp_TIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/yelp_link"
+                        style="@style/NormalPink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="@string/yelp"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="100"
+                        android:textAllCaps="false"
+                        android:textColor="@color/divider_bg"
+                        android:textSize="@dimen/txt_size_c" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:src="@drawable/gradient_bg"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/gradient_bg_trans"
+            app:layout_constraintBottom_toBottomOf="@+id/bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/userDp"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:src="@mipmap/ic_camera"
+                app:civ_border="true"
+                app:civ_border_color="@android:color/transparent"
+                app:civ_border_width="0px"
+                app:civ_shadow="false" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/upload_profile"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userDp" />
+
+
+        </LinearLayout>
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+        <Button
+            android:id="@+id/createProfile_BTN"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40_btndp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

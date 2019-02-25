@@ -1,0 +1,315 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_20sdp"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_margin="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/white"
+                app:cardCornerRadius="@dimen/_5sdp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.99"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_10sdp">
+
+                            <TextView
+                                android:id="@+id/txt_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/aeh_regular"
+                                android:text="@string/month"
+                                android:textAllCaps="true"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/txt_size_b" />
+
+                            <TextView
+                                android:id="@+id/txt_month_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txt_month"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/aeh_regular"
+                                android:text="May"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_size_c" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.01"
+                            android:background="#EAEAEA" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.99"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_10sdp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/calender" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.01"
+                            android:background="#EAEAEA" />
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_10sdp">
+
+                            <TextView
+                                android:id="@+id/txt_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/aeh_regular"
+                                android:text="@string/year"
+                                android:textAllCaps="true"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/txt_size_b" />
+
+                            <TextView
+                                android:id="@+id/txt_year_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/txt_year"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="@font/aeh_regular"
+                                android:text="2018"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_size_c" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F7F7F7"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_10sdp">
+
+                        <LinearLayout
+                            android:id="@+id/daysLL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/sun_day_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:text="Sun"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_size_c" />
+
+                            <TextView
+                                android:id="@+id/mon_day_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:text="Mon"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_size_c" />
+
+                            <TextView
+                                android:id="@+id/tue_day_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:text="Tue"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_size_c" />
+
+                            <TextView
+                                android:id="@+id/wed_day_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:text="Wed"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_size_c" />
+
+                            <TextView
+                                android:id="@+id/thu_day_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:text="Thu"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_size_c" />
+
+                            <TextView
+                                android:id="@+id/fri_day_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:textAllCaps="true"
+                                android:text="Fri"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_size_c" />
+
+                            <TextView
+                                android:id="@+id/sat_day_tv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:gravity="center"
+                                android:text="Sat"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_size_c" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lay_grid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <GridView
+                            android:id="@+id/weekday_gridview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/next"
+                            android:layout_toRightOf="@+id/prev"
+                            android:background="@android:color/white"
+                            android:minHeight="@dimen/_100sdp"
+                            android:nestedScrollingEnabled="false"
+                            android:numColumns="7"
+                            android:stretchMode="columnWidth" />
+
+                        <ImageView
+                            android:id="@+id/next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@mipmap/ic_right_arrow" />
+
+                        <ImageView
+                            android:id="@+id/prev"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:rotation="180"
+                            android:src="@mipmap/ic_right_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/name_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="true"
+                android:textSize="@dimen/txt_size_c"
+                android:fontFamily="@font/aeh_bold"
+                android:text="@string/seeTimeSlots" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/time_slots_rv"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/submit_TV"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/LL"
+            android:fontFamily="@font/aeh_bold"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/txt_size_d" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

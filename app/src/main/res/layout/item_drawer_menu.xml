@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|start"
+    android:orientation="horizontal"
+    android:padding="@dimen/_9sdp">
+
+    <ImageView
+        android:id="@+id/img_menu"
+        android:layout_width="@dimen/_21sdp"
+        android:layout_height="@dimen/_21sdp"
+         />
+
+    <TextView
+        android:id="@+id/txt_menu_item_name"
+        style="@style/Normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="Find a Worker"
+        android:textSize="@dimen/txt_size_e" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <!--  <TextView
+              android:id="@+id/txt_message_count"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="5"
+              android:gravity="center"
+              android:background="@drawable/circle"
+              android:fontFamily="@font/avenir_ltstd_roman"
+              android:textColor="@color/textColor"
+              android:textSize="@dimen/_16sp"
+              />-->
+    </RelativeLayout>
+</LinearLayout>

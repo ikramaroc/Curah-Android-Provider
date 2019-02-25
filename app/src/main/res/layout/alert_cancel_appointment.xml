@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cancelAppointme_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aeh_heavy"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:text="@string/cancelAppointme"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/txt_size_f" />
+
+    <TextView
+        android:id="@+id/areYoySureYouWantTo_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aeh_regular"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_25sdp"
+        android:text="@string/areYoySureYouWantTo"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/txt_size_d" />
+
+    <TextView
+        android:id="@+id/giveAReason_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aeh_regular"
+        android:layout_gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15dp"
+        android:textAllCaps="true"
+        android:text="@string/giveAReason"
+        android:textColor="@color/green"
+        android:textSize="@dimen/txt_size_cd" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:gravity="center|left">
+
+        <RadioButton
+            android:id="@+id/busyWithothertask_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@drawable/checkbox_selector_tick"
+            android:paddingLeft="@dimen/_5sdp"
+            android:padding="@dimen/_5dp"
+            android:fontFamily="@font/aeh_regular"
+            android:textSize="@dimen/txt_size_d"
+            android:text="@string/busyWithothertask" />
+
+        <RadioButton
+            android:id="@+id/otherReason_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:button="@drawable/checkbox_selector_tick"
+            android:paddingLeft="@dimen/_5sdp"
+            android:padding="@dimen/_5dp"
+            android:fontFamily="@font/aeh_regular"
+            android:textSize="@dimen/txt_size_d"
+            android:text="@string/otherReason" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/reason_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sp"
+        android:layout_marginLeft="@dimen/_20sp"
+        android:layout_marginRight="@dimen/_20sp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edt_reason"
+            style="@style/Normal16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@null"
+            android:fontFamily="@font/aeh_bold"
+            android:gravity="top"
+            android:hint="Mention a reason"
+            android:minHeight="@dimen/_80dp"
+            android:paddingBottom="@dimen/_5dp"
+            android:paddingLeft="@dimen/_10dp"
+            android:paddingTop="@dimen/_5dp"
+            android:textColor="@color/greyDark"
+            android:textColorHint="@color/greyDark"
+            android:textSize="@dimen/_14sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_05dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:background="@android:color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/cancel_Btn"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_40_btndp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/aeh_bold"
+            android:textSize="@dimen/txt_size_e"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/submit_Btn"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_size_e"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_height="@dimen/_40_btndp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/aeh_bold"
+            android:text="@string/submit" />
+    </LinearLayout>
+</LinearLayout>

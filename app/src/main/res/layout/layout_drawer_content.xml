@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_bg">
+
+    <RelativeLayout
+        android:id="@+id/rel_user_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/img_user"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginBottom="4dp"
+            android:src="@mipmap/ic_profile_pic_img"
+            app:civ_border="true"
+            app:civ_border_color="@android:color/transparent"
+            app:civ_border_width="0px"
+            app:civ_shadow="false"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/_5sdp"
+            android:layout_toEndOf="@id/img_user">
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                style="@style/Normal"
+                android:textSize="@dimen/_14sdp"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                style="@style/Normal"
+                android:text=""
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_below="@+id/userName"/>
+
+            <Button
+                android:id="@+id/logout_Btn"
+                android:layout_below="@id/address"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:text="Logout"
+                style="@style/button"
+                android:textSize="@dimen/txt_size_bc"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/round_corner"
+                android:textAllCaps="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_profile"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/rel_user_desc"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_profile"/>
+</RelativeLayout>

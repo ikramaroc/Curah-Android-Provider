@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/portfolio_RV"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_5dp"
+        android:layout_height="match_parent"/>
+
+
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/greyDark"
+        android:text="No portfolio found"
+        style="@style/Normal16"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/portfolio_FAB"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:clickable="true"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        android:layout_margin="@dimen/_25sdp"
+        app:srcCompat="@mipmap/add" />
+</RelativeLayout>

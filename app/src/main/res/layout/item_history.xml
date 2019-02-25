@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/date_ll"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/date_tv"
+            style="@style/Normal16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_date"
+            android:drawablePadding="@dimen/_5sdp"
+            android:padding="@dimen/_8sdp"
+            android:drawableTint="@android:color/white"
+            android:text="TextView"
+            tools:text="10 May 2018" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/service_name"
+        style="@style/Normal18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="Blow Out"
+        android:textColor="@color/divider_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_ll"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/service_price"
+        style="@style/Normal18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_10sdp"
+        android:text="Service Cost: $16"
+        android:paddingTop="@dimen/_3dp"
+        android:paddingBottom="@dimen/_3dp"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/service_name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/service_schedue_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11:00 am to 12:00 pm"
+        android:paddingLeft="@dimen/_10sdp"
+        style="@style/Normal16"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/service_price"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/userCardImage"
+        android:layout_width="50dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/service_schedue_time"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/service_provider_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_image" />
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/name_rl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right_arrow_IV"
+        app:layout_constraintStart_toEndOf="@+id/userCardImage"
+        app:layout_constraintTop_toBottomOf="@+id/service_schedue_time"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/providerName"
+            style="@style/Bold"
+            android:textSize="@dimen/txt_size_c"
+            android:fontFamily="@font/aeh_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Kim joy"
+            android:textColor="@color/divider_bg" />
+
+        <RatingBar
+            android:id="@+id/rating_RB"
+            style="@style/foodRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/providerName"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/yellow"
+            android:rating="2"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/client_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice client"
+        style="@style/Normal14"
+        android:textSize="@dimen/txt_size_bc"
+        android:textColor="@color/divider_bg"
+        android:layout_marginStart="8dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:layout_marginLeft="@dimen/_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/userCardImage"
+        app:layout_constraintTop_toBottomOf="@+id/name_rl"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <ImageView
+        android:id="@+id/right_arrow_IV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/service_schedue_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/service_schedue_time"
+        app:layout_constraintTop_toTopOf="@+id/service_price"
+        app:srcCompat="@mipmap/ic_right_arrow" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userCardImage"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

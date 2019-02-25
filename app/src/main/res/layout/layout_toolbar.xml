@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayForToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_center_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@mipmap/ic_menu"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txt_right_toolbar"
+            style="@style/Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_gravity="right"
+            android:text="@string/close"
+            android:visibility="gone"
+            android:gravity="right|center"
+            android:textSize="@dimen/txt_size_d"
+            android:layout_marginEnd="@dimen/txt_size_d"
+            android:textAllCaps="false"
+            android:padding="@dimen/_3sdp"/>
+
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

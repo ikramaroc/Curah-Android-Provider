@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <!--<android.support.v7.widget.RecyclerView
+                android:id="@+id/service_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />-->
+
+            <LinearLayout
+                android:id="@+id/LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@drawable/text_background"
+                android:backgroundTint="@color/grey"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/name_TV"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/divider_bg"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textSize="@dimen/txt_size_d"
+                    android:text="Updo"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@color/grey"/>
+
+                <TextView
+                    android:id="@+id/price_TV"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textSize="@dimen/txt_size_d"
+                    android:text="$ 1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:background="@drawable/text_background"
+                android:backgroundTint="@color/grey"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/name_TV2"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/divider_bg"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textSize="@dimen/txt_size_d"
+                    android:text="Braid"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@color/grey"/>
+
+                <TextView
+                    android:id="@+id/price_TV2"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textSize="@dimen/txt_size_d"
+                    android:text="$ 19"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minHeight="@dimen/_45sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textSize="@dimen/txt_size_d"
+                    android:text="@string/serviceCost"
+                    android:textAllCaps="true"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/service_cost"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textSize="@dimen/txt_size_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:layout_centerVertical="true"
+                    android:text="$19"
+                    android:textAllCaps="true"
+                    android:textColor="@color/divider_bg" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divider_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minHeight="@dimen/_40sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/date"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textSize="@dimen/txt_size_d"
+                    android:textAllCaps="true"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="28 May 2018"
+                    android:fontFamily="@font/aeh_regular"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:textSize="@dimen/txt_size_d"
+                    android:textColor="@color/divider_bg" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divider_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minHeight="@dimen/_40sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/time"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textSize="@dimen/txt_size_d"
+                    android:textAllCaps="true"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="10:00 am to 11:00 am"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textSize="@dimen/txt_size_d"
+                    android:textColor="@color/divider_bg" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/divider_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:minHeight="@dimen/_40sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/description_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/description"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/aeh_regular"
+                    android:textSize="@dimen/txt_size_d"
+                    android:text="@string/description"
+                    android:textAllCaps="true"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_alignTop="@+id/description_head"
+                    android:layout_below="@+id/description_head"
+                    android:layout_centerVertical="true"
+                    android:text="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+                    android:fontFamily="@font/aeh_regular"
+                    android:textSize="@dimen/txt_size_bc"
+                    android:textColor="@color/divider_bg" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/divider_bg" />
+
+            <include layout="@layout/blowout_layout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_service_Btn"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textAllCaps="true"
+            android:text="@string/cancel_service" />
+
+        <Button
+            android:id="@+id/start_service_Btn"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="true"
+            android:text="@string/start_service" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

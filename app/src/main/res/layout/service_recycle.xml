@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:nestedScrollingEnabled="false" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sdjcajsdasd"
+        android:gravity="center"
+        style="@style/Normal16"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:visibility="gone"
+        android:layout_below="@+id/recycle_item"
+        android:textColor="@android:color/black"
+        />
+    <Button
+        android:id="@+id/editDoc_TV"
+        style="@style/button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45_btndp"
+        android:layout_below="@+id/hint"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/editDoc"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/txt_size_d" />
+</RelativeLayout>
